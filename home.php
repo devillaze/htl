@@ -14,6 +14,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
+$('#RoomsInfo').jqm();
+
 	$('.fancybox').fancybox({
 		ajax: {
 				type : 'GET',
@@ -47,13 +49,16 @@ function getRoom(room_number){
 	$.ajax({
 			type : 'POST',
 			url : 'getRoom.php',
-			dataType : 'json',
+			dataType : 'html',
 			data: {
 				room_number : room_number
 			},
 			success : function(data){
-				$("#RoomsInfo").css("display","block");
-				$("#roomNumber").text(data["room_number"]);
+				$('#RoomsInfo').html('');
+				//$("#RoomsInfo").css("display","block");
+				$('#RoomsInfo').append(data);
+				$('#RoomsInfo').jqmShow(); 
+				/*$("#roomNumber").text(data["room_number"]);
 				$("#roomStatus").text(data["status"]);
 				if(data["guest"] == null){
 					$("#roomGuest").text("None");
@@ -61,7 +66,7 @@ function getRoom(room_number){
 				else{
 					$("#roomGuest").text(data["guest_name"]);
 				}
-				console.log(data["room_number"]);
+				console.log(data["room_number"]);*/
 				
 			},
 			error : function(XMLHttpRequest, textStatus, errorThrown) {
@@ -99,7 +104,7 @@ TEST
 ?>
 </div>
 
-<div id="RoomsInfo" class="room_info" style="display:none">
+<div id="RoomsInfo" class=" jqmDialog room_info" style="display:none">
 <table>
 	
 	<tr>

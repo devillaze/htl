@@ -30,7 +30,7 @@ $result["status"] = $room["status"];
 $result["guest"] = $room["guest_id"];
 $result["guest_name"] = $room["fname"];
 
-echo json_encode($result);
+json_encode($result);
 
 ?>
 <?php
@@ -49,3 +49,4 @@ echo json_encode($result);
 	</tr>
 	
 </table>
+<input type="image" src="dialog/close.gif" class="jqmdX jqmClose" />

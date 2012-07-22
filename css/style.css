@@ -35,3 +35,45 @@ body {
 
 .room_list{float: left; width: 10%; margin: 0 0 10px 0;}
 .room_info{float: right; width: 85%; }
+
+#RoomsInfo{
+	background-color: #FFF;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+/* ===================================
+	JQ MODAL
+======================================*/
+.jqmOverlay{
+	background-color: #000;
+	opacity: 0.8 !important;
+}
+div.jqmDialog {
+  display: none;
+    
+    position: fixed;
+    top: 17%;
+    left: 50%;
+    
+    margin-left: -400px;
+    padding: 10px;
+  width: 800px;
+
+  overflow: hidden;
+  font-family:verdana,tahoma,helvetica;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+input.jqmdX {
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  padding: 0 0 0 50px;
+  height: 50px;
+  width: 0px;
+  background: url(../css/images/MyClose.png) no-repeat top left;
+  overflow: hidden;
+}
