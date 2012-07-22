@@ -1,0 +1,37 @@
+h1 {
+	text-shadow: 2px 2px 0px #1e6b9c;
+	font-family: sans-serif;
+	font-variant: normal;
+	font-weight: bold;
+}
+
+body {
+	margin-right: 5%;
+	margin-left: 5%;
+	color: #212121;
+	letter-spacing: 2px;
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+}
+
+#login {
+	width: 300px;
+	font-size: 22px;
+	margin: 30px;
+	padding: 30px;
+	background-color: #eee;
+	color: #212121;
+	text-shadow: 0px 0px #265c7c;
+}
+
+.rooms{
+	line-height: 10px;
+	border: 1px solid #212121;
+	float: left;
+	padding: 5px;
+	margin: 4px;
+	
+}
+.rooms td{text-align: center;}
+
+.room_list{float: left; width: 10%; margin: 0 0 10px 0;}
+.room_info{float: right; width: 85%; }
